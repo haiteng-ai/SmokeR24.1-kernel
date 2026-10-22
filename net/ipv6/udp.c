@@ -36,6 +36,7 @@
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/skbuff.h>
+#include <linux/bpf-cgroup.h>
 #include <linux/slab.h>
 #include <asm/uaccess.h>
 

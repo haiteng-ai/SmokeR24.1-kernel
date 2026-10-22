@@ -110,6 +110,7 @@
 #include <net/xfrm.h>
 #include <trace/events/udp.h>
 #include <linux/static_key.h>
+#include <linux/bpf-cgroup.h>
 #include <trace/events/skb.h>
 #include "udp_impl.h"
 #include <net/sock_reuseport.h>
