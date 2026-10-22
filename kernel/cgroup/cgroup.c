@@ -3535,6 +3535,7 @@ static int cgroup_cpu_pressure_show(struct seq_file *seq, void *v)
 
 	return psi_show(seq, psi, PSI_CPU);
 }
+#endif /* CONFIG_PSI */
 
 static int cgroup_freeze_show(struct seq_file *seq, void *v)
 {
@@ -3570,6 +3571,7 @@ static ssize_t cgroup_freeze_write(struct kernfs_open_file *of,
 	return nbytes;
 }
 
+#ifdef CONFIG_PSI
 static ssize_t cgroup_pressure_write(struct kernfs_open_file *of, char *buf,
 					  size_t nbytes, enum psi_res res)
 {
