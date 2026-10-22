@@ -155,7 +155,7 @@ enum dhd_op_flags {
 #define DHD_SCAN_PASSIVE_TIME		130 /* ms: Embedded default Passive setting from DHD */
 
 #ifndef POWERUP_WAIT_MS
-#define POWERUP_WAIT_MS		2000 /* ms: time out in waiting wifi to come up */
+#define POWERUP_WAIT_MS		4000 /* ms: time out in waiting wifi to come up */
 #endif
 
 enum dhd_bus_wake_state {
@@ -1028,7 +1028,7 @@ extern uint dhd_force_tx_queueing;
 #define WIFI_TURNOFF_DELAY		DEFAULT_WIFI_TURNOFF_DELAY
 #endif /* WIFI_TURNOFF_DELAY */
 
-#define DEFAULT_WIFI_TURNON_DELAY		200
+#define DEFAULT_WIFI_TURNON_DELAY		1000
 #ifndef WIFI_TURNON_DELAY
 #define WIFI_TURNON_DELAY		DEFAULT_WIFI_TURNON_DELAY
 #endif /* WIFI_TURNON_DELAY */
